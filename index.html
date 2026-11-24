@@ -2175,7 +2175,7 @@ function setDoc(n){
  const key='assets/sheets/'+String(n).padStart(2,'0')+'.webp',img=el('sheetImage');
  const url=window.ASSETS[key];img.hidden=!url;el('sheetHint').hidden=!!url;
  if(url){img.src=url;img.alt='Страница '+n+' проекта · '+(allPages[n]||'Лист проекта')}
- el('fullPdf').href='../'+encodeURIComponent(window.ALBUM_FILE)+'#page='+n;
+ el('fullPdf').href='https://github.com/mp-digital-tools-IP/nastroenie/releases/download/drawings-2024/nastroenie-album-2024.pdf'+'#page='+n;
 }
 function showSheets(pages){
  const list=el('docSelect');list.replaceChildren();const ordered=[...new Set([...pages,...Object.keys(allPages).map(Number)])];
